@@ -1,0 +1,5 @@
+1. textField.inputView
+2.inputAccessoryView  辅助工具条  键盘的
+3.获取单独新建的nib
+UIToolbar *keyBoardAccessory = [[[NSBundle mainBundle] loadNibNamed:@"keyboardTabbar" owner:nil options:nil] firstObject];
+owner  设置所有者  在xib中要设置class 这样就可以连线了

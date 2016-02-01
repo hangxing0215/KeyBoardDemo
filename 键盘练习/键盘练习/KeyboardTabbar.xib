@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="yPo-Db-67N" customClass="KeyboardTabbar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <animations/>
+            <items>
+                <barButtonItem title="&lt;" width="12" id="tiq-VU-V3o">
+                    <connections>
+                        <action selector="previous:" destination="yPo-Db-67N" id="7A6-uK-nzc"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem title="&gt;" id="ytL-lH-xjC">
+                    <connections>
+                        <action selector="next:" destination="yPo-Db-67N" id="jJw-gk-EtT"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="Dy4-u7-F0O"/>
+                <barButtonItem title="done" id="Lr8-0k-iWD">
+                    <connections>
+                        <action selector="down:" destination="yPo-Db-67N" id="2PL-af-YOh"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+            <connections>
+                <outlet property="nextItem" destination="ytL-lH-xjC" id="4hR-MP-RSl"/>
+                <outlet property="previousItem" destination="tiq-VU-V3o" id="Iao-D4-isc"/>
+            </connections>
+            <point key="canvasLocation" x="343" y="255"/>
+        </toolbar>
+    </objects>
+</document>
